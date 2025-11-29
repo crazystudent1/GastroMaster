@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - GastroMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">Gastro<span>Master</span></div>
+            <nav>
+                <ul>
+                    <li><a href="source.html" style="font-weight: bold;">⬅ Назад до рецептів</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="text-align: center; padding-top: 50px;">
+        
+        <h1 style="font-size: 3em; margin-bottom: 20px;">Хто ми? 👨‍💻</h1>
+        <p style="font-size: 1.2em; color: #555; max-width: 600px; margin: 0 auto 40px;">
+            GastroMaster — це студентський проєкт, створений для тих, хто хоче смачно їсти, 
+            але не хоче витрачати години на пошук рецептів.
+        </p>
+
+        <div class="developers-grid" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            
+            <div class="dev-card" style="background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px;">
+                <div style="font-size: 80px; margin-bottom: 10px;">😎</div>
+                <h3 style="color: var(--primary-color);">Daniil Lysenko</h3>
+                <p style="font-weight: bold; margin-bottom: 10px;">Frontend Developer</p>
+                <p style="color: #666; font-size: 0.9em;">
+                    Розробив архітектуру сайту, логіку "Розумного холодильника" та базу даних.
+                </p>
+            </div>
+
+            <div class="dev-card" style="background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 300px;">
+                <div style="font-size: 80px; margin-bottom: 10px;">😎</div>
+                <h3 style="color: var(--primary-color);">David Hornostai</h3>
+                <p style="font-weight: bold; margin-bottom: 10px;">QA & Design</p>
+                <p style="color: #666; font-size: 0.9em;">
+                     Дизайн, тестування рецептів на смак та перевірка коду на баги.
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 GastroMaster. Зроблено з любов'ю ❤</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script>
+        // Приховуємо зайві елементи на цій сторінці (якщо JS спільний)
+        window.onload = function() {
+            // Перевіряємо тему при завантаженні
+            const savedTheme = localStorage.getItem('gastroTheme');
+            if (savedTheme === 'dark') document.body.classList.add('dark-mode');
+        };
+    </script>
+</body>
+</html>
