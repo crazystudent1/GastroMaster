@@ -1133,7 +1133,12 @@ function filterRecipes(category) {
         displayRecipes(recipesData);
     } else {
         const filtered = recipesData.filter(recipe => recipe.category === category);
-        const titles = { 'breakfast': 'Сніданки', 'lunch': 'Обіди', 'dinner': 'Вечері' };
+        const titles = { 
+            'breakfast': 'Сніданки 🥞', 
+            'lunch': 'Обіди 🍲', 
+            'dinner': 'Вечері 🍝', 
+            'dessert': 'Десерти та Напої 🍰'  // <--- Додали це
+        };
         sectionTitle.innerText = titles[category];
         displayRecipes(filtered);
     }
