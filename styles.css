@@ -405,3 +405,51 @@ body.dark-mode .dev-card p {
 body.dark-mode .dev-card h3 {
      color: #ff6b6b !important;
 }
+/*АДАПТИВНІСТЬ (МОБІЛЬНА ВЕРСІЯ) Fixes issue #2 */
+
+@media (max-width: 768px) {
+    /* Шапка сайту */
+    .header-content {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+    }
+    .logo { margin-bottom: 15px; }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    nav a, .theme-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /* Пошук і Холодильник */
+    .search-box, .fridge-box {
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        gap: 10px;
+    }
+    .search-box input, .fridge-box input, 
+    .search-box button, .fridge-box button {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Категорії */
+    .category-buttons { gap: 10px; }
+    .btn-cat { flex-grow: 1; }
+
+    /* Сітка рецептів (одна картка в ряд) */
+    .recipes-grid { grid-template-columns: 1fr; }
+
+    /* Картки розробників */
+    .dev-card {
+        width: 100% !important;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}
