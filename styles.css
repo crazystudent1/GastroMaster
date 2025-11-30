@@ -392,3 +392,16 @@ body.dark-mode .theme-btn {
     background-color: #fff;
     color: #333;
 }
+/* Темна тема для карток розробників */
+body.dark-mode .dev-card {
+    background-color: #1e1e1e !important; /* <--- МАГІЯ ТУТ */
+    color: #fff !important;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.05) !important;
+}
+
+body.dark-mode .dev-card p {
+    color: #ccc !important;
+}
+body.dark-mode .dev-card h3 {
+     color: #ff6b6b !important;
+}
